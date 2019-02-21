@@ -1,0 +1,29 @@
+*{
+    color: rgb(80, 79, 79);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+}
+
+body {
+        background-image: url("https://wallpapercave.com/wp/wp3186482.png");
+        background-color: #cccccc; 
+        height: 100vh; 
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover; 
+      }
+
+h1 {
+    color: white;
+}
+
+img {
+    position:absolute;
+    top:10%;
+    right:30%;
+    height:80%;
+}
+
+.hidden {
+    display:none;
+}
