@@ -22,18 +22,20 @@ var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var livesText = document.getElementById("lives-text")
 var goodJob = document.getElementById("goodJob")
+var myaudio = document.getElementById("myaudio")
 
 
 
 //Whenever a key is pressed and released the following function will run.
-document.onkeyup = function (event) {
+
+document.onkeyup = function (event) {    
 
 //the key the user pressed will be recorded to the userGuess variable  
     var userGuess = event.key;
 
 //The below condition is for winning
     if (alphabet.indexOf(userGuess) !== -1) {
-        
+        myaudio.play()
         directionsText.textContent = "";
         winsText.textContent = "Wins: " + wins;
         lossesText.textContent = "Losses: " + losses;
